@@ -434,7 +434,7 @@ export default new Module({
                             subreddit: info.subreddit,
                             banReason: `Banned from: ${info.permalink}`,
                             banMessage: `For the following ${kind}: ${info.permalink}`,
-                            banContext: info.id,
+                            // banContext: info.id,
                         });
                     }
 
@@ -532,7 +532,7 @@ export default new Module({
                             subreddit: info.subreddit,
                             banReason: `Banned from: ${info.permalink}`,
                             banMessage: `For the following ${kind}: ${info.permalink}`,
-                            banContext: info.id,
+                            // banContext: info.id,
                         });
                     }
 
