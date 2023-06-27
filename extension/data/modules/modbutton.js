@@ -492,7 +492,9 @@ function init ({savedSubs, rememberLastAction, globalButton, excludeGlobal}) {
               $status = $popup.find('.status'),
               banReason = $popup.find('.ban-note').val(),
               banDuration = $popup.find('.ban-duration').val(),
-              banContext = $popup.find('.thing_id').text(),
+              // commenting out banContext to see if we can avoid passing it to the API
+              // so that the ban message does not link to a specific comment
+              // banContext = $popup.find('.thing_id').text(),
               subreddits = [],
               user = $popup.find('.user').text();
 
@@ -597,7 +599,7 @@ function init ({savedSubs, rememberLastAction, globalButton, excludeGlobal}) {
                         params.banReason = banReason;
                         params.banMessage = banMessage;
                         params.banDuration = banDuration;
-                        params.banContext = banContext;
+                        // params.banContext = banContext;
                     }
                     await TBApi.friendUser(params, false).then(response => {
                         if (response.json.errors.length) {

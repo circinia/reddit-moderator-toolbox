@@ -464,7 +464,9 @@ export async function friendUser ({
     banReason,
     banMessage,
     banDuration,
-    banContext,
+    // commenting out banContext to see if it can be made optional
+    // to prevent bans from linking an unwanted comment
+    // banContext,
 }) {
     let trimmedBanMessage,
         trimmedBanReason;
@@ -490,7 +492,7 @@ export async function friendUser ({
         note: trimmedBanReason,
         ban_message: trimmedBanMessage,
         duration: banDuration,
-        ban_context: banContext,
+        // ban_context: banContext,
     });
 }
 
