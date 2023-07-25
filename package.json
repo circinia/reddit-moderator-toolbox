@@ -18,7 +18,7 @@
     "license": "Apache-2.0",
     "dependencies": {
         "codemirror": "^5.65.13",
-        "dompurify": "^3.0.4",
+        "dompurify": "^3.0.5",
         "jquery": "^3.6.4",
         "pako": "^0.2.6",
         "snuownd": "github:gamefreak/snuownd#533e8dcb67fe8e4ddc83fb8317ed0d10c25b6fcb",
@@ -34,7 +34,7 @@
         "docdash": "^2.0.1",
         "eslint": "^8.44.0",
         "eslint-plugin-import": "^2.27.5",
-        "inquirer": "^9.2.7",
+        "inquirer": "^9.2.8",
         "jsdoc": "^4.0.2",
         "rollup": "^3.2.3",
         "rollup-plugin-copy": "^3.4.0"
